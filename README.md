@@ -14,46 +14,27 @@ npm install veild-rpc
 
 ```javascript
 var run = function() {
-  var RpcClient = require('veild-rpc');
+    var RpcClient = require('veild-rpc');
+  
+    var config = {
+      protocol: 'http',
+      user: 'user',
+      pass: 'pass',
+      host: '127.0.0.1',
+      port: '58812',
+    };
 
-  var config = {
-    protocol: 'http',
-    user: 'user',
-    pass: 'pass',
-    host: '127.0.0.1',
-    port: '58812',
-  };
-
-  // config can also be an url, e.g.:
-  // var config = 'http://user:pass@127.0.0.1:18812';
-
-  var rpc = new RpcClient(config);
-
-  var txids = [];
-
-  function showNewTransactions() {
-    rpc.getRawMemPool(function (err, ret) {
-      if (err) {
-        console.error(err);
-        return setTimeout(showNewTransactions, 10000);
-      }
-
-      function batchCall() {
-        ret.result.forEach(function (txid) {
-          if (txids.indexOf(txid) === -1) {
-            rpc.getRawTransaction(txid);
-          }
-        });
-      }
-
-        txids = ret.result;
-        setTimeout(showNewTransactions, 2500);
-      });
+    var rpc = new RpcClient(config);
+    
+    rpc.getinfo(function (err, ret) {
+        if (err) {
+            console.error(err);
+        }
+        console.log(ret);
     });
-  }
+}
 
-  showNewTransactions();
-};
+run();
 ```
 
 
