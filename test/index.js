@@ -75,7 +75,7 @@ describe('RpcClient', function () {
     var client = new RpcClient({
       user: 'user',
       pass: 'pass',
-      port: 58332,
+      port: 58812,
     });
     client.protocol.should.equal(https);
 
@@ -87,7 +87,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       protocol: 'http'
     });
     client.protocol.should.equal(http);
@@ -109,7 +109,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -140,7 +140,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: false
     });
@@ -176,7 +176,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: false
     });
@@ -213,7 +213,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: false
     });
@@ -252,7 +252,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -282,7 +282,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -312,7 +312,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -343,7 +343,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -377,7 +377,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -410,7 +410,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -440,7 +440,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -471,7 +471,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
@@ -502,7 +502,7 @@ describe('RpcClient', function () {
       user: 'user',
       pass: 'pass',
       host: 'localhost',
-      port: 58332,
+      port: 58812,
       rejectUnauthorized: true,
       disableAgent: true
     });
