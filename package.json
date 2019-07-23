@@ -1,7 +1,7 @@
 {
   "name": "veild-rpc",
   "description": "Veil Client Library to connect to Veild via RPC",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": {
     "name": "Mat Waller",
     "email": "mat@wallercrypto.com"
