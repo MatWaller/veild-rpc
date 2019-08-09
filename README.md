@@ -13,22 +13,25 @@ npm install veild-rpc
 ## Examples
 
 ```javascript
-var run = function() {
-    var RpcClient = require('veild-rpc');
-  
-    var config = {
-      protocol: 'http',
-      user: 'user',
-      pass: 'pass',
-      host: '127.0.0.1',
-      port: '58812',
+const RpcClient = require('veild-rpc');
+
+var run = function(){
+
+    // Veild Configuration Object
+    var RpcConfig = {
+        protocol: 'http',
+        user: 'veild',
+        pass: 'somerandompassword',
+        host: '127.0.0.1',
+        port: '58812'
     };
 
-    var rpc = new RpcClient(config);
-    
-    rpc.getinfo(function (err, ret) {
-        if (err) {
-            console.error(err);
+    var rpc = new RpcClient(RpcConfig);
+
+    // Get the total spendable balance of all coin derivitives.
+    rpc.getspendablebalance(function(err, ret){
+        if(err){
+            console.log(err);
         }
         console.log(ret);
     });
