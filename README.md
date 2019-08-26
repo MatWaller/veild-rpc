@@ -9,11 +9,9 @@ veild-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](
 ```bash
 npm install veild-rpc
 ```
-
 ## Examples
-
 ```javascript
-const RpcClient = require('veild-rpc');
+    const RpcClient = require('veild-rpc');
 
 var run = function(){
 
@@ -36,7 +34,6 @@ var run = function(){
         console.log(ret);
     });
 }
-
 run();
 ```
 
